@@ -17,6 +17,12 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    // fontSize: {
+    //   sm: ['14px', '20px'],
+    //   base: ['16px', '24px'],
+    //   lg: ['20px', '28px'],
+    //   '20xl': ['16rem'],
+    // }
   },
   plugins: [],
 };
