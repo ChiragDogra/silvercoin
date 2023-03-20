@@ -23,6 +23,14 @@ module.exports = {
     //   lg: ['20px', '28px'],
     //   '20xl': ['16rem'],
     // }
+
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '70%': '70%',
+      '16': '4rem',
+    }
   },
   plugins: [],
 };

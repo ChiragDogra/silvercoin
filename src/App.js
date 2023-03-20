@@ -5,13 +5,15 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing';
 import Support from './components/Support'
+import Home from './pages/Home';
 import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <>
       <Navbar />
-      <HomePage/>
+      {/* <HomePage/> */}
+      <Home/>
       {/* <Hero /> */}
       {/* <About /> */}
       {/* <Support /> */}
