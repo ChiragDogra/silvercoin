@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/WhiteLogo.png'
 
 import {
     FaFacebook,
@@ -11,66 +12,81 @@ import {
 const Footer = () => {
   return (
     <div className='w-full bg-slate-900 text-gray-300 py-y px-2'>
-        <div className='max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8'>
-            <div>
-                <h6 className='font-bold uppercase pt-2'>Solutions</h6>
-                <ul>
-                    <li className='py-1'>Marketing</li>
-                    <li className='py-1'>Analytics</li>
-                    <li className='py-1'>Commerce</li>
-                    <li className='py-1'>Data</li>
-                    <li className='py-1'>Cloud</li>
-                </ul>
-            </div>
-            <div>
-                <h6 className='font-bold uppercase pt-2'>Support</h6>
-                <ul>
-                    <li className='py-1'>Pricing</li>
-                    <li className='py-1'>Documentation</li>
-                    <li className='py-1'>Guides</li>
-                    <li className='py-1'>API Status</li>
-                </ul>
-            </div>
-            <div>
-                <h6 className='font-bold uppercase pt-2'>Company</h6>
-                <ul>
-                    <li className='py-1'>About</li>
-                    <li className='py-1'>Blog</li>
-                    <li className='py-1'>Jobs</li>
-                    <li className='py-1'>Press</li>
-                    <li className='py-1'>Partners</li>
-                </ul>
-            </div>
-            <div>
-                <h6 className='font-bold uppercase pt-2'>Legal</h6>
-                <ul>
-                    <li className='py-1'>Claims</li>
-                    <li className='py-1'>Privacy</li>
-                    <li className='py-1'>Terms</li>
-                    <li className='py-1'>Policies</li>
-                    <li className='py-1'>Conditions</li>
-                </ul>
-            </div>
-            <div className='col-span-2 pt-8 md:pt-2'>
-                <p className='font-bold uppercase'>Subscribe to our newsletter</p>
-                <p className='py-4'>The latest news, articles, and resources, sent to your inbox weekly.</p>
-                <form className='flex flex-col sm:flex-row'>
-                    <input className='w-full p-2 mr-4 rounded-md mb-4' type="email" placeholder='Enter email..'/>
-                    <button className='p-2 mb-4'>Subscribe</button>
-                </form>
-            </div>
+      {/* <!-- Flex Container --> */}
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        {/* <!-- Logo and social links container --> */}
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          {/* <!-- Logo --> */}
+          <div>
+            <img src={logo} width={160} height={160} class="" alt="" />
+          </div>
+          {/* <!-- Social Links Container --> */}
+          <div class="flex justify-center space-x-4">
+            {/* <!-- Link 1 --> */}
+            <a href="#">
+              <img src="img/icon-facebook.svg" alt="" class="h-8" />
+            </a>
+            {/* <!-- Link 2 --> */}
+            <a href="#">
+              <img src="img/icon-youtube.svg" alt="" class="h-8" />
+            </a>
+            {/* <!-- Link 3 --> */}
+            <a href="#">
+              <img src="img/icon-twitter.svg" alt="" class="h-8" />
+            </a>
+            {/* <!-- Link 4 --> */}
+            <a href="#">
+              <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+            </a>
+            {/* <!-- Link 5 --> */}
+            <a href="#">
+              <img src="img/icon-instagram.svg" alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        {/* <!-- List Container --> */}
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Pricing</a>
+            <a href="#" class="hover:text-brightRed">Products</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Careers</a>
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
         </div>
 
-        <div className='flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
-        <p className='py-4'>2022 Workflow, LLC. All rights reserved</p>
-        <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
-            <FaFacebook />
-            <FaInstagram />
-            <FaTwitter />
-            <FaTwitch />
-            <FaGithub />
+        {/* <!-- Input Container --> */}
+        <div class="flex flex-col justify-between">
+          {/* <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Updated in your inbox"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form> */}
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
         </div>
-        </div>
+      </div>
     </div>
   )
 }

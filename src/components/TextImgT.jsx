@@ -1,7 +1,6 @@
-import React from "react";
-import phoneImg from "../assets/PhoneImg.png";
+import React from 'react'
 
-function TextImg({Heading, text1, text2, text3, text4, Image, Button}) {
+function TextImgT({Heading, text1, text2, text3, text4, Image, Button}) {
   return (
     <div className="w-full py-16 px-4 ">
       <div className="max-w-[1240px] mx-auto pt-6 grid md:grid-cols-2">
@@ -25,10 +24,10 @@ function TextImg({Heading, text1, text2, text3, text4, Image, Button}) {
             Get Started
           </button>
         </div>
-        <img className="w-[600px] mx-auto my-4 " src={phoneImg} alt="/" />
+        <img className="w-[600px] mx-auto my-4 " src={Image} alt="/" />
       </div>
     </div>
-  );
+  )
 }
 
-export default TextImg;
+export default TextImgT
