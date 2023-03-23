@@ -8,12 +8,12 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
-  const handleClose = () => setNav(!nav);
+  const handleClose = () => nav == true? setNav(!nav) : setNav(false);
 
   return (
     <div className="w-screen h-[70px] z-10 bg-zinc-200 fixed drop-shadow-lg z-50">
       <div className="px-2 flex justify-between items-center w-full h-full">
-        <NavLink to="/">
+        <NavLink to="/" onClick={handleClose}>
           <div className="flex items-center hover:cursor-pointer">
             <img
               src={logo}
@@ -99,7 +99,7 @@ const Navbar = () => {
             offset={-100}
             duration={500}
           >
-            Blog
+            Blogs
           </NavLink>
         </li>
         <li className="border-b-2 border-zinc-300 w-full bg-indigo-700  text-white p-2 pb-2.5 rounded-md m-2">

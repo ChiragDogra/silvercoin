@@ -4,7 +4,7 @@ function TextImg({Heading, text1, text2, text3, text4, Image, Button}) {
   return (
     <div className="w-full py-16 px-4 ">
       <div className="max-w-[1240px] mx-auto pt-6 grid md:grid-cols-2">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center m-1 sm:p-5 lg:p-2">
           <h1 className={`${Heading !== ""?"md:text-7xl sm:text-5xl text-4xl font-bold py-2 text-center sm:text-left" : "invisible"}`}>
           {Heading}
           </h1>
