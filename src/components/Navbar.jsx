@@ -83,7 +83,7 @@ const Navbar = () => {
         <li className="border-b-2 border-zinc-300 w-full">
           <NavLink
             onClick={handleClose}
-            to="support"
+            to="services"
             smooth={true}
             offset={-50}
             duration={500}
@@ -94,7 +94,7 @@ const Navbar = () => {
         <li className="border-b-2 border-zinc-300 w-full">
           <NavLink
             onClick={handleClose}
-            to="platforms"
+            to="/"
             smooth={true}
             offset={-100}
             duration={500}

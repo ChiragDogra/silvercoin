@@ -1,5 +1,5 @@
 import React from "react";
-import creditCard from "../assets/creditCard.png";
+import Image from "../assets/images/landing/MoneyMotivation.svg";
 import SocialCards from "../components/SocialCards";
 
 function HomePage() {
@@ -19,7 +19,7 @@ function HomePage() {
           <button className='py-2 w-[20%] sm:w-[30%] md:w-[40%] my-8 text-sm sm:text-2xl'>Join Us</button>
         </div>
         <div className="flex justify-center ">
-          <img className=" w-3/5 sm:w-1/2 md:w-4/6 lg:3/4" src={creditCard} alt="/" />
+          <img className=" w-4/5 sm:w-1/2 md:w-5/6 lg:w-7/8" src={Image} alt="/" />
         </div>
       </div>
       <SocialCards/>

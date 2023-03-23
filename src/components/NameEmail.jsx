@@ -5,10 +5,10 @@ function NameEmail() {
     <div className='w-full bg-black py-16 text-white px-4'>
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
         <div className='lg:col-span-2 my-4'>
-          <h1 className='md:text-5xl sm:text-4xl text-3xl font-bold py-2'>
+          <h1 className='text-center sm:text-left md:text-5xl sm:text-4xl text-3xl font-bold py-2'>
             Want a financially secured future?
           </h1>
-          <p className='md:text-3xl sm:text-2xl text-xl py-2'>Let our experts assist you to manage your finance wisely.</p>
+          <p className='text-center sm:text-left md:text-3xl sm:text-2xl text-xl py-2'>Let our experts assist you to manage your finance wisely.</p>
         </div>
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full md:ml-5'>
