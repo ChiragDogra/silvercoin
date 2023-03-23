@@ -9,7 +9,7 @@ import Designer from "../assets/images/about/DesignerFlatline.svg";
 
 const text1 = {
   Heading: "Welcome to Silvercoins",
-  Text: "Silvercoin Financial Advisory is a financial institution offering the best financial services to all those citizens of India who are eligible to pay taxes or involved in any financial activities.",
+  Text: "Silvercoins Financial Advisory is a financial institution offering the best financial services to all those citizens of India who are eligible to pay taxes or involved in any financial activities.",
   Img: Consult
 };
 
@@ -21,12 +21,12 @@ const para1 = {
 
 const text2 = {
   Heading: "",
-  Text:"Silvercoin is a financial advisory firm that helps individuals and businesses make smart investment decisions. They offer a wide range of services, including investment management, retirement planning, tax planning, and estate planning",
+  Text:"Silvercoins is a financial advisory firm that helps individuals and businesses make smart investment decisions. They offer a wide range of services, including investment management, retirement planning, tax planning, and estate planning",
   Img: Designer,
 }
 
 const para2 = {
-  text1: "One of the key things that sets Silvercoin apart from other financial advisory firms is their approach to investing. They believe in taking a long-term, diversified approach, rather than trying to time the market or make quick profits. This means that they invest in a variety of assets, including stocks, bonds, and real estate, and they do so in a way that is tailored to each client's individual needs and goals.",
+  text1: "One of the key things that sets Silvercoins apart from other financial advisory firms is their approach to investing. They believe in taking a long-term, diversified approach, rather than trying to time the market or make quick profits. This means that they invest in a variety of assets, including stocks, bonds, and real estate, and they do so in a way that is tailored to each client's individual needs and goals.",
   text2: "In addition to their investment management services, Silvercoin also offers retirement planning, tax planning, and estate planning services. These services are designed to help clients plan for the future, minimise their tax liability, and ensure that their assets are passed on to their loved ones in the most efficient way possible.",
   text3: "If you would like to learn more about Silvercoin and the services they offer, you can visit their website or contact them directly."
 

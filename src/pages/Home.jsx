@@ -6,7 +6,7 @@ import PhoneImg from '../assets/PhoneImg.svg'
 
 const text1 = {
   Heading : "Welcome to Silvercoins",
-  Text : "Silvercoin is a financial advisory firm that helps individuals and businesses make smart investment decisions. They offer a wide range of services, including investment management, retirement planning, tax planning, and estate planning.",
+  Text : "Silvercoins is a financial advisory firm that helps individuals and businesses make smart investment decisions. They offer a wide range of services, including investment management, retirement planning, tax planning, and estate planning.",
   Img : PhoneImg
 
 }
