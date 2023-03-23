@@ -1,16 +1,16 @@
 import React from "react";
-import ImgText from "../components/ImgText";
-import PhoneImg from "../assets/PhoneImg.png";
 import TextImg from "../components/TextImg";
 import Paragraph from "../components/Paragraph";
 import ImgTextT from "../components/ImgTextT";
 import Cards from "../components/Cards";
 import SocialCards from "../components/SocialCards";
+import Consult from "../assets/images/about/ConsultingFlatline.svg";
+import Designer from "../assets/images/about/DesignerFlatline.svg";
 
 const text1 = {
   Heading: "Welcome to Silvercoins",
   Text: "Silvercoin Financial Advisory is a financial institution offering the best financial services to all those citizens of India who are eligible to pay taxes or involved in any financial activities.",
-  Img: PhoneImg,
+  Img: Consult
 };
 
 const para1 = {
@@ -22,7 +22,7 @@ const para1 = {
 const text2 = {
   Heading: "",
   Text:"Silvercoin is a financial advisory firm that helps individuals and businesses make smart investment decisions. They offer a wide range of services, including investment management, retirement planning, tax planning, and estate planning",
-  Img: PhoneImg,
+  Img: Designer,
 }
 
 const para2 = {

@@ -3,8 +3,8 @@ import React from 'react'
 function SocialCards() {
   return (
     <div className="w-full  flex flex-col justify-items-center items-center">
-    <div className="flex flex-col py-3 md:min-w-[660px] mx-1 bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl my-4">
-        <div className="flex justify-between flex-wrap px-4">
+    <div className="flex flex-col py-3 md:min-w-[660px] mx-1 justify-center bg-zinc-200 border border-slate-300 rounded-xl text-center shadow-xl my-4">
+        <div className="flex justify-between flex-wrap px-4 ">
           <p className="flex px-4 py-2 text-slate-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"

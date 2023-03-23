@@ -1,7 +1,7 @@
 import React from 'react'
 import NameEmail from '../components/NameEmail'
 import TextImg from '../components/TextImg'
-import PhoneImg from '../assets/PhoneImg.png'
+import PhoneImg from '../assets/PhoneImg.svg'
 
 
 const text1 = {

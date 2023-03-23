@@ -1,5 +1,4 @@
 import React from "react";
-import phoneImg from "../assets/PhoneImg.png";
 
 function TextImg({Heading, text1, text2, text3, text4, Image, Button}) {
   return (
@@ -25,7 +24,7 @@ function TextImg({Heading, text1, text2, text3, text4, Image, Button}) {
             Get Started
           </button>
         </div>
-        <img className="w-[600px] mx-auto my-4 " src={phoneImg} alt="/" />
+        <img className="w-[600px] mx-auto my-4 " src={Image} alt="/" />
       </div>
     </div>
   );
