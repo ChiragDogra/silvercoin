@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClose = () => nav == true? setNav(!nav) : setNav(false);
 
   return (
-    <div className="w-screen h-[70px] z-10 bg-zinc-200 fixed drop-shadow-lg z-50">
+    <div className="w-screen h-[70px]  bg-zinc-200 fixed drop-shadow-lg ">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <NavLink to="/" onClick={handleClose}>
           <div className="flex items-center hover:cursor-pointer">
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li className="transition-all ease-out duration-300 hover:scale-105 hover: cursor-pointer">
               <NavLink
-                to="pricing"
+                to="contact"
                 smooth={true}
                 offset={-50}
                 duration={500}
@@ -105,7 +105,7 @@ const Navbar = () => {
         <li className="border-b-2 border-zinc-300 w-full bg-indigo-700  text-white p-2 pb-2.5 rounded-md m-2">
           <NavLink
             onClick={handleClose}
-            to="pricing"
+            to="contact"
             smooth={true}
             offset={-50}
             duration={500}

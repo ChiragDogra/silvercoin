@@ -10,7 +10,7 @@ function HomePage() {
     >
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col pl-6 justify-center justify-items-center items-center text-center md: justify-start md:text-left md:align-items-left md:items-start w-full px-2 py-8 ">
-          <h1 className="py-3 text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold z-20">
+          <h1 className="py-3 text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold ">
             Silvercoins
           </h1>
           <p className="text-3xl sm:text-5xl">
