@@ -6,18 +6,20 @@ import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
-
+import Blog1 from "./pages/blog/Blog1";
 function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="home" element={<Home />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="services" element={<Services />}></Route>
         <Route path="contact" element={<Contact />}></Route>
-      </Routes>
+      </Routes> */}
+
+       <Blog1 />
       <Footer />
     </>
   );
