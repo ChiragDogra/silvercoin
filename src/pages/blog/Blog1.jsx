@@ -1,5 +1,4 @@
 import React from "react";
-import Paragraph from "../../components/Paragraph";
 import SocialCards from "../../components/SocialCards";
 
 const para1 = {
@@ -28,50 +27,50 @@ function blog1() {
         <h1 className="md:text-8xl sm:text-6xl text-4xl font-bold pt-3 text-center  sm:text-left ">
           Balancing the books:
         </h1>
-        <h2 className="md:text-4xl sm:text-7xl text-2xl font-bold pt-3 text-center md:my-10 sm:text-left ">
+        <h2 className="md:text-4xl sm:text-7xl text-2xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">
           How Accounts Serve as the Backbone of Your Personal and Professional
           Life
         </h2>
 
 
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text1}</p>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text2}</p>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text1}</p>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text2}</p>
 
 
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">The Basics of Accounting</h1>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text3}</p>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text4}</p>
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">The Basics of Accounting</h1>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text3}</p>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text4}</p>
         
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">Accounting in your personal life</h1>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left leading-none">Managing budgets</li>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left leading-none">Tracking expenses</li>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left leading-none">Creating financial goals</li>
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">Accounting in your personal life</h1>
+          <li className=" sm:text-xl md:text-2xl  text-left leading-none">Managing budgets</li>
+          <li className=" sm:text-xl md:text-2xl  text-left leading-none">Tracking expenses</li>
+          <li className=" sm:text-xl md:text-2xl  text-left leading-none">Creating financial goals</li>
 
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">Software and technology for accounting</h1>
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">Software and technology for accounting</h1>
 
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text5}</p>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left leading-none">Cloud-based solutions, which allow you to access your financial information from anywhere.</li>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left leading-none">Automation tools that make it easier for you to perform tasks such as billing and invoicing automatically. </li>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left leading-none"> Financial dashboards, which provide real-time insights into key performance indicators (KPIs) so that you can make better business decisions in real time. </li>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text5}</p>
+          <li className=" sm:text-xl md:text-2xl  text-left leading-none">Cloud-based solutions, which allow you to access your financial information from anywhere.</li>
+          <li className=" sm:text-xl md:text-2xl  text-left leading-none">Automation tools that make it easier for you to perform tasks such as billing and invoicing automatically. </li>
+          <li className=" sm:text-xl md:text-2xl  text-left leading-none"> Financial dashboards, which provide real-time insights into key performance indicators (KPIs) so that you can make better business decisions in real time. </li>
 
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">Challenges of acounting</h1>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text6}</p>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text7}</p>
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">Challenges of acounting</h1>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text6}</p>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text7}</p>
 
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">Tips for effective accounting</h1>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text8}</p>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left ">Organize financial data: You should have one place where all of your financial information is stored so that it's easy to find when needed. This will allow you to keep track of everything from bills paid to investments made, which will help provide an overview of your current situation as well as any future goals or plans that need attention.</li>
-          <li className=" sm:text-xl md:text-3xl md:5xl text-left ">Analyze trends: Once organized, accounting software allows users to track spending habits over time so they can see how much money they spend on certain items each month (or year). This information can be used when planning budgets or managing personal finances more effectively by helping identify areas where cuts could be made without affecting quality of life too much; for example, cutting back on eating out would save some cash but also mean fewer opportunities for socializing with friends--which may not be worth it! </li>
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">Tips for effective accounting</h1>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text8}</p>
+          <li className=" sm:text-xl md:text-2xl  text-left ">Organize financial data: You should have one place where all of your financial information is stored so that it's easy to find when needed. This will allow you to keep track of everything from bills paid to investments made, which will help provide an overview of your current situation as well as any future goals or plans that need attention.</li>
+          <li className=" sm:text-xl md:text-2xl  text-left ">Analyze trends: Once organized, accounting software allows users to track spending habits over time so they can see how much money they spend on certain items each month (or year). This information can be used when planning budgets or managing personal finances more effectively by helping identify areas where cuts could be made without affecting quality of life too much; for example, cutting back on eating out would save some cash but also mean fewer opportunities for socializing with friends--which may not be worth it! </li>
 
 
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">The Future of accounting</h1>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text9}</p>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text10}</p>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text11}</p>
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">The Future of accounting</h1>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text9}</p>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text10}</p>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text11}</p>
 
-        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:my-10 sm:text-left ">Conclusion</h1>
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">{para1.text12}</p>  
-        <p className=" sm:text-xl md:text-3xl md:5xl text-left my-3">college classes on accounting before applying for jobs at companies where they work with numbers every day (like banks). You'll also need strong math skills so that when someone asks "What does this number mean?", you have an answer ready!</p>  
+        <h1 className="md:text-3xl sm:text-6xl text-xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">Conclusion</h1>
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text12}</p>  
+        <p className=" sm:text-xl md:text-2xl  text-left my-3">college classes on accounting before applying for jobs at companies where they work with numbers every day (like banks). You'll also need strong math skills so that when someone asks "What does this number mean?", you have an answer ready!</p>  
 
 
       </div>
