@@ -93,10 +93,93 @@ function BlogPage() {
 
             
 
+            <div
+              class="flex-none w-3/4 md:w-4/6 lg:w-1/3 mr-8 md:pb-4 border rounded-lg bg-gray-100 my-4"
+            >
+              <NavLink to="blog3" >
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    class="object-cover shadow-md hover:shadow-xl rounded-lg object-cover h-60 w-96 "
+                    src={img3}
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 py-2 ">
+                  <div class="text-lg leading-6 font-medium space-y-1">
+                    <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                        Breaking Down Barriers 
+                    </h3>
+                  </div>
+                  <div class="text-lg">
+                    <p class="">
+                    How Startups Can Thrive in India
+                    </p>
+                    <p class="font-medium text-sm text-indigo-600 mt-2">
+                      Read more<span class="text-indigo-600">&hellip;</span>
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+
+            <div
+              class="flex-none w-3/4 md:w-4/6 lg:w-1/3 mr-8 md:pb-4 border rounded-lg bg-gray-100 my-4"
+            >
+              <NavLink to="blog4" >
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    class="object-cover shadow-md hover:shadow-xl rounded-lg object-cover h-60 w-96 "
+                    src={img4}
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 py-2 ">
+                  <div class="text-lg leading-6 font-medium space-y-1">
+                    <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Driving Startup Growth in India
+                    </h3>
+                  </div>
+                  <div class="text-lg">
+                    <p class="">
+                  Strategies and Best Practices for Success 
+                    </p>
+                    <p class="font-medium text-sm text-indigo-600 mt-2">
+                      Read more<span class="text-indigo-600">&hellip;</span>
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
 
 
-
-
+            <div
+              class="flex-none w-3/4 md:w-4/6 lg:w-1/3 mr-8 md:pb-4 border rounded-lg bg-gray-100 my-4"
+            >
+              <NavLink to="blog5" >
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    class="object-cover shadow-md hover:shadow-xl rounded-lg object-cover h-60 w-96 "
+                    src={img5}
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 py-2 ">
+                  <div class="text-lg leading-6 font-medium space-y-1">
+                    <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                     Beyond Crunching Numbers 
+                    </h3>
+                  </div>
+                  <div class="text-lg">
+                    <p class="">
+                 The Critical Role of Financial Advisory in Your Financial Success
+                    </p>
+                    <p class="font-medium text-sm text-indigo-600 mt-2">
+                      Read more<span class="text-indigo-600">&hellip;</span>
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
 
 
             
