@@ -18,9 +18,11 @@ function blog3() {
   return (
     <div className="w-full pt-12 ">
       <div className="flex-row  align-middle items-center w-full p-5 sm:p-8 md:p-10 min-h-screen">
-        <h1 className="md:text-8xl sm:text-6xl text-4xl font-bold pt-3 text-center  sm:text-left ">
-        Breaking Down Barriers:
-        </h1>
+      <div className="w-full flex flex-col align-middle, items-center">
+          <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold pt-3 text-center  sm:text-left ">
+            Breaking down barriers
+          </h1>
+        </div>
         <h2 className="md:text-4xl sm:text-7xl text-2xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">
         How Startups Can Thrive in India
         </h2>

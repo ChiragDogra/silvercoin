@@ -24,9 +24,11 @@ function DirectTax() {
   return (
     <div className="w-full pt-12 ">
       <div className="flex-row  align-middle items-center flex flex-col justify-center w-full p-5 sm:p-8 md:p-10 min-h-screen">
-        <h1 className="md:text-8xl sm:text-6xl text-4xl font-bold pt-3 text-center  sm:text-left ">
+      <div className="w-full flex flex-col align-middle, items-center">
+          <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold pt-3 text-center  sm:text-left ">
             Direct Tax
-        </h1>
+          </h1>
+        </div>
 
 
         <p className=" sm:text-xl md:text-2xl  text-left my-3">{para1.text1}</p>

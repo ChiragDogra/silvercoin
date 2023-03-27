@@ -2,7 +2,7 @@ import React from "react";
 import SocialCards from "../../components/SocialCards";
 
 const para1 = {
-  text1: "Accounting is the process of recording, classifying and summarizing financial transaction's also one of the oldest professions in the world--accountants have been keeping records since ancient times. ",
+  text1: "Accounting is the process of recording, classifying and summarizing financial transaction's also one of the oldest professions in the world, accountants have been keeping records since ancient times. ",
   text2: "Accounting helps you understand how your business or organization makes money, where it spends money and whether it's making enough profit to survive. As an individual, accounting can help you track your personal finances so that you can plan for college tuition payments or retirement savings without getting caught off guard by unexpected expenses like medical bills or car repairs.",
   text3: "Accounting is the process of recording, classifying and summarizing financial information. Accounting principles are the rules that govern how this information is to be recorded and reported. There are two basic types of accounts: assets and liabilities. Assets are things like cash in your bank account or cars you have purchased; liabilities are debts owed by an individual or business (such as credit card balances).",
   text4: "Accounting records can be maintained using either single-entry book keeping or double-entry book keeping systems. Single-entry systems only record one side of each transaction (either income or expense), while double-entry systems record sides so that they balance out at the end of each period--the end result being that all transactions equal zero!",
@@ -24,9 +24,11 @@ function blog1() {
   return (
     <div className="w-full pt-12 ">
       <div className="flex-row  align-middle items-center w-full p-5 sm:p-8 md:p-10 min-h-screen">
-        <h1 className="md:text-8xl sm:text-6xl text-4xl font-bold pt-3 text-center  sm:text-left ">
-          Balancing the books:
-        </h1>
+      <div className="w-full flex flex-col align-middle, items-center">
+          <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold pt-3 text-center  sm:text-left ">
+            Balancing the books
+          </h1>
+        </div>
         <h2 className="md:text-4xl sm:text-7xl text-2xl font-bold pt-3 text-center md:mt-10 md:mb-5 sm:text-left ">
           How Accounts Serve as the Backbone of Your Personal and Professional
           Life
