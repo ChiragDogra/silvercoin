@@ -20,7 +20,7 @@ const para1 = {
 function Audit() {
   return (
     <div className="w-full pt-12 ">
-      <div className="flex-row  align-middle items-center w-full p-5 sm:p-8 md:p-10 min-h-screen">
+      <div className="flex-row flex flex-col justify-center  align-middle items-center w-full p-5 sm:p-8 md:p-10 min-h-screen">
         <h1 className="md:text-8xl sm:text-6xl text-4xl font-bold pt-3 text-center  sm:text-left ">
             Audit Assurance
         </h1>

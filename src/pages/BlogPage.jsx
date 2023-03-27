@@ -1,5 +1,10 @@
 import React from 'react'
 import SocialCards from '../components/SocialCards'
+import { NavLink } from "react-router-dom";
+import img1 from "../assets/images/blogs/img1.jpg"
+import img2 from "../assets/images/blogs/Thingking.svg"
+import img3 from "../assets/images/blogs/Thingking.svg"
+
 
 function BlogPage() {
   return (
@@ -11,11 +16,11 @@ function BlogPage() {
 
         <div class="container w-full px-4 flex-grow w-full py-4 sm:py-16 mx-auto px-0">
       <div class="mx-auto w-full md:w-4/5 px-4">
-        <div class="container my-8">
+        <div class="container my-8 flex flex-col items-center justify-center">
           
           <div
             id="scrollContainer"
-            class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8"
+            class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8 scrollbar w-screen max-w-[1100px]"
           >
 
 
@@ -23,39 +28,75 @@ function BlogPage() {
             <div
               class="flex-none w-3/4 md:w-4/6 lg:w-1/3 mr-8 md:pb-4 border rounded-lg bg-gray-100 my-4"
             >
-              <a href="#" class="space-y-4 ">
+              <NavLink to="blog1" >
                 <div class="aspect-w-16 aspect-h-9">
                   <img
-                    class="object-cover shadow-md hover:shadow-xl rounded-lg"
-                    src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixqx=3H1AJd0Pae&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                    class="object-cover shadow-md hover:shadow-xl rounded-lg object-cover h-54 w-96 "
+                    src={img1}
                     alt=""
                   />
                 </div>
                 <div class="px-4 py-2 ">
                   <div class="text-lg leading-6 font-medium space-y-1">
                     <h3 class="font-bold text-gray-800 text-3xl mb-2">
-                      Some title goes here
+                        Balancing the books
                     </h3>
                   </div>
                   <div class="text-lg">
                     <p class="">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ad recusandae, consequatur corrupti vel quisquam id itaque
-                      nam
+                    Accounting is the process of recording, classifying and summarizing financial transaction's also one of the oldest professions in the 
                     </p>
                     <p class="font-medium text-sm text-indigo-600 mt-2">
                       Read more<span class="text-indigo-600">&hellip;</span>
                     </p>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             </div>
 
 
             
 
 
+
+
+
+            <div
+              class="flex-none w-3/4 md:w-4/6 lg:w-1/3 mr-8 md:pb-4 border rounded-lg bg-gray-100 my-4"
+            >
+              <NavLink to="blog2" >
+                <div class="aspect-w-16 aspect-h-9">
+                  <img
+                    class="object-cover shadow-md hover:shadow-xl rounded-lg object-cover h-60 w-96 "
+                    src={img2}
+                    alt=""
+                  />
+                </div>
+                <div class="px-4 py-2 ">
+                  <div class="text-lg leading-6 font-medium space-y-1">
+                    <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                        Understanding the benefits
+                    </h3>
+                  </div>
+                  <div class="text-lg">
+                    <p class="">
+                    Filing Income Tax Returns (ITR) is an essential part of financial planning and compliance in India. It is a legal 
+                    </p>
+                    <p class="font-medium text-sm text-indigo-600 mt-2">
+                      Read more<span class="text-indigo-600">&hellip;</span>
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+
+
             
+
+
+
+
+
 
 
             

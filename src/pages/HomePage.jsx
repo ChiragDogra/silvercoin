@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div
       name="home"
-      className="w-full h-screen max-h-max bg-zinc-200 flex flex-col justify-items-center items-center"
+      className="w-full min-h-screen lg:min-h-screen bg-zinc-200 flex flex-col justify-items-center items-center"
     >
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className="flex flex-col pl-6 justify-center justify-items-center items-center text-center md: justify-start md:text-left md:align-items-left md:items-start w-full px-2 py-8 ">
