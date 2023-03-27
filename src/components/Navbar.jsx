@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
-
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -36,70 +36,46 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="transition-all ease-out duration-300 hover:scale-110 hover: cursor-pointer">
-              {/* <NavLink to="services" smooth={true} offset={-50} duration={500}> */}
-                <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-black rounded bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-black dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-                >
-                  Services{" "}
-                  <svg
-                    class="w-5 h-5 ml-1"
-                    aria-hidden="true"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-                <div
-                  id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-                >
-                  <ul
-                    class="py-2 text-sm text-black-700 dark:text-black-400"
-                    aria-labelledby="dropdownLargeButton"
-                  >
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
-                      >
-                        Dashboard
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
-                      >
-                        Settings
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-black"
-                      >
-                        Earnings
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-black-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-black-400 dark:hover:text-black"
-                    >
-                      Sign out
-                    </a>
+              <NavLink to="services" smooth={true} offset={-50} duration={500}>
+
+
+                <li class="group  relative dropdown  text-black hover:text-black cursor-pointer text-base tracking-wide">
+                  <a>Services</a>
+                  <div class="group-hover:block dropdown-menu absolute hidden h-auto">
+                    <ul class="top-0 w-48 bg-white shadow px-6 py-8">
+                      <li class="py-1">
+                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
+                          Item
+                        </a>
+                      </li>
+                      <li class="py-1">
+                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
+                          Item 2
+                        </a>
+                      </li>
+                      <li class="py-1">
+                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
+                          Item 3
+                        </a>
+                      </li>
+                      <li class="py-1">
+                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
+                          Item 4
+                        </a>
+                      </li>
+                      <li class="py-1">
+                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
+                          Item 5
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              {/* </NavLink> */}
+                </li>
+
+
+
+
+              </NavLink>
             </li>
             <li className="transition-all ease-out duration-300 hover:scale-110 hover: cursor-pointer">
               <NavLink to="blog" smooth={true} offset={-100} duration={500}>

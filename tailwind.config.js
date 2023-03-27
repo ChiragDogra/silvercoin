@@ -32,5 +32,8 @@ module.exports = {
       '16': '4rem',
     }
   },
+  variants: {
+    display:['group-hover']
+  },
   plugins: [],
 };
