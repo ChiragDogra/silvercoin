@@ -14,28 +14,37 @@ import DirectTax from "./pages/services/DirectTax";
 import GST from "./pages/services/GST";
 import CompReg from "./pages/services/CompReg";
 import MarketRes from "./pages/services/MarketRes";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="home" element={<Home />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="services" element={<Services />}></Route>
+        <Route path="blog" element={<BlogPage />}></Route>
         <Route path="contact" element={<Contact />}></Route>
-      </Routes> */}
+        <Route path="blog/blog1" element={<Blog1 />}></Route>
+        <Route path="blog/blog2" element={<Blog2 />}></Route>
+        <Route path="blog3" element={<Blog3 />}></Route>
+        <Route path="audit" element={<Audit/>}></Route>
+        <Route path="tax" element={<DirectTax/>}></Route>
+        <Route path="gst" element={<GST/>}></Route>
+        <Route path="compreg" element={<CompReg/>}></Route>
+        <Route path="markres" element={<MarketRes/>}></Route>
+      </Routes>
 
-       {/* <Blog1 /> */}
-       {/* <Blog2 /> */}
-       {/* <Blog3/> */}
+      
+      
 
-       {/* <Audit/> */}
-       {/* <DirectTax/> */}
-       {/* <GST/> */}
-       {/* <CompReg/> */}
-       <MarketRes/>
+      
+      
+      
+      
+      
       <Footer />
     </>
   );
