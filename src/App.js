@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import Blog1 from "./pages/blog/Blog1";
 import Blog2 from "./pages/blog/Blog2";
 import Blog3 from "./pages/blog/Blog3";
+import Blog4 from "./pages/blog/Blog4";
+import Blog5 from "./pages/blog/Blog5";
 import Audit from "./pages/services/Audit";
 import DirectTax from "./pages/services/DirectTax";
 import GST from "./pages/services/GST";
@@ -29,7 +31,9 @@ function App() {
         <Route path="contact" element={<Contact />}></Route>
         <Route path="blog/blog1" element={<Blog1 />}></Route>
         <Route path="blog/blog2" element={<Blog2 />}></Route>
-        <Route path="blog3" element={<Blog3 />}></Route>
+        <Route path="blog/blog3" element={<Blog3 />}></Route>
+        <Route path="blog/blog4" element={<Blog4 />}></Route>
+        <Route path="blog/blog5" element={<Blog5 />}></Route>
         <Route path="audit" element={<Audit/>}></Route>
         <Route path="tax" element={<DirectTax/>}></Route>
         <Route path="gst" element={<GST/>}></Route>
