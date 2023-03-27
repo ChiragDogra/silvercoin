@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Image from "../assets/images/landing/MoneyMotivation.svg";
 import SocialCards from "../components/SocialCards";
 
@@ -16,13 +17,19 @@ function HomePage() {
           <p className="text-3xl sm:text-5xl">
             Your partner for financial success
           </p>
-          <button className='py-2 w-[20%] sm:w-[30%] md:w-[40%] my-8 text-sm sm:text-2xl'>Join Us</button>
+          <button className="py-2 w-[20%] sm:w-[30%] md:w-[40%] my-8 text-sm sm:text-2xl">
+            <NavLink to="contact">Join Us</NavLink>
+          </button>
         </div>
         <div className="flex justify-center ">
-          <img className=" w-4/5 sm:w-1/2 md:w-5/6 lg:w-7/8" src={Image} alt="/" />
+          <img
+            className=" w-4/5 sm:w-1/2 md:w-5/6 lg:w-7/8"
+            src={Image}
+            alt="/"
+          />
         </div>
       </div>
-      <SocialCards/>
+      <SocialCards />
     </div>
   );
 }

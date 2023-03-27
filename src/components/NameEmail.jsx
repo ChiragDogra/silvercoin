@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function NameEmail() {
   return (
@@ -13,7 +14,9 @@ function NameEmail() {
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full md:ml-5'>
             <button className='bg-indigo-700 text-white transi transition-all ease-out duration-300 rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3 md:ml-10 md:mt-10'>
+            <NavLink to="/contact">
               Connect with us
+              </NavLink>
             </button>
           </div>
         </div>

@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -35,48 +34,52 @@ const Navbar = () => {
                 About us
               </NavLink>
             </li>
-            <li className="transition-all ease-out duration-300 hover:scale-110 hover: cursor-pointer">
+
+            <li class="group  relative dropdown transition-all ease-out duration-300 hover:scale-110 text-black hover:text-black cursor-pointer text-base tracking-wide">
               <NavLink to="services" smooth={true} offset={-50} duration={500}>
-
-
-                <li class="group  relative dropdown  text-black hover:text-black cursor-pointer text-base tracking-wide">
-                  <a>Services</a>
-                  <div class="group-hover:block dropdown-menu absolute hidden h-auto">
-                    <ul class="top-0 w-48 bg-white shadow px-6 py-8">
-                      <li class="py-1">
-                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
-                          Item
-                        </a>
-                      </li>
-                      <li class="py-1">
-                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
-                          Item 2
-                        </a>
-                      </li>
-                      <li class="py-1">
-                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
-                          Item 3
-                        </a>
-                      </li>
-                      <li class="py-1">
-                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
-                          Item 4
-                        </a>
-                      </li>
-                      <li class="py-1">
-                        <a class="block text-black font-bold text-base uppercase hover:text-black cursor-pointer">
-                          Item 5
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-
-
-
+                <a>Services</a>
+                <div class="group-hover:block dropdown-menu absolute hidden h-auto">
+                  <ul class="top-0 w-48 bg-white shadow mt-5 pl-2 py-8 rounded">
+                    <li class="py-1">
+                      <NavLink to="tax">
+                      <a class="block text-black text-base  hover:text-blue-400 cursor-pointer transition-all ease-out duration-300 hover:scale-110">
+                        Accounting/Taxation
+                      </a>
+                      </NavLink>
+                    </li>
+                    <li class="py-1">
+                    <NavLink to="gst" smooth={true} duration={500}>
+                      <a class="block text-black text-base  hover:text-blue-400 cursor-pointer transition-all ease-out duration-300 hover:scale-110">
+                        GST
+                      </a>
+                      </NavLink>
+                    </li>
+                    <li class="py-1">
+                    <NavLink to="markres" smooth={true} duration={500}>
+                    <a class="block text-black text-base  hover:text-blue-400 cursor-pointer transition-all ease-out duration-300 hover:scale-110">
+                        Market Research
+                      </a>
+                      </NavLink>
+                    </li>
+                    <li class="py-1">
+                    <NavLink to="audit" smooth={true} duration={500}>
+                    <a class="block text-black text-base  hover:text-blue-400 cursor-pointer transition-all ease-out duration-300 hover:scale-110">
+                        Audit Assurance
+                      </a>
+                      </NavLink>
+                    </li>
+                    <li class="py-1">
+                    <NavLink to="compreg" smooth={true} duration={500}>
+                    <a class="block text-black text-base  hover:text-blue-400 cursor-pointer transition-all ease-out duration-300 hover:scale-110">
+                        ROC services
+                      </a>
+                      </NavLink>
+                    </li>
+                  </ul>
+                </div>
               </NavLink>
             </li>
+
             <li className="transition-all ease-out duration-300 hover:scale-110 hover: cursor-pointer">
               <NavLink to="blog" smooth={true} offset={-100} duration={500}>
                 Blog
@@ -139,7 +142,7 @@ const Navbar = () => {
             Blogs
           </NavLink>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full bg-indigo-700  text-black p-2 pb-2.5 rounded-md m-2">
+        <li className="border-b-2 border-zinc-300 w-full bg-indigo-700  text-white p-2 pb-2.5 rounded-md m-2">
           <NavLink
             onClick={handleClose}
             to="contact"
