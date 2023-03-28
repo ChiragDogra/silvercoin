@@ -109,8 +109,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="align-middle text-center justify-items-center pb-5">
-        Made with 💖 by{" "}
+      <p className="align-middle text-sm text-center justify-items-center pb-5">
+        Made by{" "}
         <a
           href="https://chiragdogra.com"
           target="_blank"
