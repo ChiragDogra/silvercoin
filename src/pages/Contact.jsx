@@ -1,27 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
+import Axios from "axios"
 
 function Contact() {
+
+
+  const url = "http://localhost:4000/submit";
+  const [data, setData] = useState({
+    fName: "",
+    lName: "",
+    email: "",
+    address: "",
+    city: "",
+    state: "",
+    phone: ""
+  })
+
+const handleClick=(e)=>{
+    const newData = {...data}
+    newData[e.target.id] = e.target.value
+    setData(newData)
+}
+
+const sendData = async (e)=>{
+  e.preventDefault();
+  const {fName, lName, email, address, city, state, phone} = data;
+}
+
+const submit =(e)=>{
+  e.preventDefault();
+  console.log(data);
+  Axios.post(url, {
+    fName: data.fName,
+    lName: data.lName,
+    email: data.email, 
+    address: data.address,
+    city: data.city,
+    state: data.state,
+    phone: data.phone,
+  }).then(res=>{
+    console.log(res.data);
+  }).catch((err)=>{
+    console.log("oops something went wrong");
+  })
+}
+
   return (
     <div className="flex-row  align-middle items-center w-full p-10 ">
       <h1 className="text-5xl text-center font-bold mt-14">Contact us</h1>
       <div className="flex flex-row align-center text-center items-center justify-center my-10 bg-green ">
-        <form class="w-full max-w-md m-1 p-4 sm:m-8 sm:p-8 md:m-10 ">
+        <form class="w-full max-w-md m-1 p-4 sm:m-8 sm:p-8 md:m-10 "  method="POST">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-first-name"
+                for="fName"
               >
                 First Name
               </label>
-              <input
+              <input onChange={(e)=>handleClick(e)} value={data.fName}
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                id="grid-first-name"
+                id="fName"
                 type="text"
-                placeholder="Jane"
+                placeholder="Ishaan"
               />
               {/* <p class="text-red-500 text-xs italic">
                 Please fill out this field.
@@ -30,15 +73,15 @@ function Contact() {
             <div class="w-full md:w-1/2 px-3">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-last-name"
+                for="lName"
               >
                 Last Name
               </label>
-              <input
+              <input onChange={(e)=>handleClick(e)} value={data.lName}
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-last-name"
+                id="lName"
                 type="text"
-                placeholder="Doe"
+                placeholder="Awasthi"
               />
             </div>
           </div>
@@ -46,13 +89,13 @@ function Contact() {
             <div class="w-full px-3">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-mail"
+                for="email"
               >
                 Email
               </label>
-              <input
+              <input onChange={(e)=>handleClick(e)} value={data.email}
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-mail"
+                id="email"
                 type="email"
                 placeholder="abc@xyzmail.com"
               />
@@ -66,13 +109,13 @@ function Contact() {
             <div class="w-full px-3 ">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-phone"
+                for="phone"
               >
                 Your Phone Number
               </label>
-              <input
+              <input onChange={(e)=>handleClick(e)} value={data.phone}
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-phone"
+                id="phone"
                 type="phone"
                 placeholder="+91 9958550222"
               />
@@ -86,25 +129,62 @@ function Contact() {
             <div class="w-full px-3 ">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-address"
+                for="address"
               >
                 Your address
               </label>
-              <input
+              <input onChange={(e)=>handleClick(e)} value={data.address}
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-address"
+                id="address"
                 type="address"
-                placeholder="Gurgaon"
+                placeholder="house no. 120, sec-420"
               />
               {/* <p class="text-gray-600 text-xs italic">
                 Make it as long and as crazy as you'd like
               </p> */}
             </div>
           </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="city "
+              >
+                City
+              </label>
+              <input onChange={(e)=>handleClick(e)} value={data.city}
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="city"
+                type="text"
+                placeholder="Gurgaon ..."
+              />
+              {/* <p class="text-red-500 text-xs italic">
+                Please fill out this field.
+              </p> */}
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="state"
+              >
+                State
+              </label>
+              <input onChange={(e)=>handleClick(e)} value={data.state}
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="state"
+                type="text"
+                placeholder="Haryana"
+              />
+            </div>
+          </div>
 
-          <button className='p-2 w-[20%] sm:w-[20%] md:w-[30%]  text-sm sm:text-2xl font-bold'>Send</button>
+          <button className='p-2 w-[20%] sm:w-[20%] md:w-[30%]  text-sm sm:text-2xl font-bold' onClick={()=>sendData()}>Send</button>
         </form>
       </div>
+
+
+
+
 
       <div className="max-w-[1240px] mx-auto pt-6 grid md:grid-cols-2 ">
         <div className=" flex flex-col">
