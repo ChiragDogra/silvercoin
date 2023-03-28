@@ -24,15 +24,30 @@ const handleClick=(e)=>{
     setData(newData)
 }
 
-const sendData = async (e)=>{
-  e.preventDefault();
-  const {fName, lName, email, address, city, state, phone} = data;
-}
+// const sendData = async (e)=>{
+//   e.preventDefault();
+//   const {fName, lName, email, address, city, state, phone} = data;
+
+
+//   const res = await fetch(url, {
+//       method: "POST",
+//       headers:{
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify({
+//         fName, lName, email, address, city, state, phone
+//       })
+//   })
+
+//   const data = await res.json();
+
+//   console.log(data);
+// }
 
 const submit =(e)=>{
   e.preventDefault();
   console.log(data);
-  Axios.post(url, {
+  const strData = JSON.stringify({
     fName: data.fName,
     lName: data.lName,
     email: data.email, 
@@ -40,7 +55,8 @@ const submit =(e)=>{
     city: data.city,
     state: data.state,
     phone: data.phone,
-  }).then(res=>{
+  });
+  Axios.post(url, strData).then(res=>{
     console.log(res.data);
   }).catch((err)=>{
     console.log("oops something went wrong");
@@ -50,7 +66,7 @@ const submit =(e)=>{
   return (
     <div className="flex-row  align-middle items-center w-full p-10 ">
       <h1 className="text-5xl text-center font-bold mt-14">Contact us</h1>
-      <div className="flex flex-row align-center text-center items-center justify-center my-10 bg-green ">
+      <div className="flex flex-row align-center text-center items-center justify-center my-10 bg-green " onSubmit={(e)=>submit(e)}>
         <form class="w-full max-w-md m-1 p-4 sm:m-8 sm:p-8 md:m-10 "  method="POST">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -178,7 +194,7 @@ const submit =(e)=>{
             </div>
           </div>
 
-          <button className='p-2 w-[20%] sm:w-[20%] md:w-[30%]  text-sm sm:text-2xl font-bold' onClick={()=>sendData()}>Send</button>
+          <button className='p-2 w-[20%] sm:w-[20%] md:w-[30%]  text-sm sm:text-2xl font-bold' >Send</button>
         </form>
       </div>
 
