@@ -7,7 +7,7 @@ import Axios from "axios"
 function Contact() {
 
 
-  const url = "http://localhost:4000/submit";
+  const url = "https://localhost:4000/submit";
   const [data, setData] = useState({
     fName: "",
     lName: "",
@@ -47,7 +47,7 @@ const handleClick=(e)=>{
 const submit =(e)=>{
   e.preventDefault();
   console.log(data);
-  const strData = JSON.stringify({
+  const fData = {
     fName: data.fName,
     lName: data.lName,
     email: data.email, 
@@ -55,7 +55,8 @@ const submit =(e)=>{
     city: data.city,
     state: data.state,
     phone: data.phone,
-  });
+  }
+  const strData = JSON.stringify(fData);
   Axios.post(url, strData).then(res=>{
     console.log(res.data);
   }).catch((err)=>{
