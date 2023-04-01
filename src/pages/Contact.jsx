@@ -7,7 +7,7 @@ import Axios from "axios"
 function Contact() {
 
 
-  const url = "https://localhost:4000/submit";
+  const url = "http://charming-eel-wear.cyclic.app/submit";
   const [data, setData] = useState({
     fName: "",
     lName: "",
@@ -46,16 +46,9 @@ const handleClick=(e)=>{
 
 const submit =(e)=>{
   e.preventDefault();
-  console.log(data);
-  const fData = {
-    fName: data.fName,
-    lName: data.lName,
-    email: data.email, 
-    address: data.address,
-    city: data.city,
-    state: data.state,
-    phone: data.phone,
-  }
+  const {address, city, email, fName, lName, phone, state} = data;
+  const fData = {address, city, email, fName, lName, phone,state};
+  console.log(fData);
   const strData = JSON.stringify(fData);
   Axios.post(url, strData).then(res=>{
     console.log(res.data);
