@@ -7,7 +7,7 @@ import Axios from "axios"
 function Contact() {
 
 
-  const url = "http://charming-eel-wear.cyclic.app/submit";
+  const url = "https://silvercoinbackend.onrender.com/submit";
   const [data, setData] = useState({
     fName: "",
     lName: "",
